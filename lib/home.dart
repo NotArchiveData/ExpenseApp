@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {},
-              style: ElevatedButton.styleFrom(
+              style: ElevatedButton.styleFrom( 
                 padding: EdgeInsets.fromLTRB(100,20,100,20),
               ),
               child: Text("UPI", style: TextStyle(

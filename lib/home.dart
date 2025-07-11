@@ -5,31 +5,35 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Expenses Please', style: TextStyle(
-          fontWeight: FontWeight.bold,
-        ),),
-        backgroundColor: Colors.white,
-        centerTitle: true,
-      ),
+    return Center(
+      child:
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          
+          children: [
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.fromLTRB(100,20,100,20),
+              ),
+              child: Text("Cash", style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),),
+            ),
 
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            color: Colors.brown[200],
-            padding: const EdgeInsets.all(20),
-            child: const Text("whats up ma dawg?")
-          ),
+            SizedBox(height: 20,),
 
-          Container(
-            color: Colors.brown[100],
-            padding: const EdgeInsets.all(20),
-            child: const Text("nm wbu?")
-          )
-        ],
-      )
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.fromLTRB(100,20,100,20),
+              ),
+              child: Text("UPI", style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),),
+            ),
+          ]
+        )
     );
   }
 }
